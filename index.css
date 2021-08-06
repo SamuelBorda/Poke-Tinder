@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+body{
+    max-height: 100vh;
+    background-color: rgb(251, 255, 0);
+    font-family: Calibri,sabs-serif; 
+}
+.todo{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 100vh;
+
+}
+.izq{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    
+}
+ .barraSup{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right , #ff1c68 , #ff7562);
+}
+.iconProfile{
+ border-radius: 50%;
+ border: 2px solid white;
+width: 40px;
+height: 40px;
+}
+.MiPer{
+ margin-left: 15px;
+ font-size: 26px;
+ color: white;
+}
+.Barra{
+ display:flex;
+ flex-direction: row;
+ margin-top:25px;
+ padding: 15px; 
+ list-style: none;
+}
+.match{
+    margin-left: 20px;
+    font-weight: 600;
+     color:black;
+}
+.match::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-image:linear-gradient(to right , #ff1c68 , #ff7562);
+}
+.mens{
+    margin-left: 32px; 
+    font-weight: 600;
+    color:black;
+}
+.inferior{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+  
+}
+.CuadradoMatches{
+    width: 131px;
+    height: 195px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to right , #ff1c68 , #ff7562);
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+    border-radius: 8px;
+}
+.texto{
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+   
+}
+.iconder{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.botonFoto{
+ position:fixed;
+ width: 55px;
+height: 55px;
+line-height: 55px;
+bottom: 30px;
+right: 30px;
+background: rgb(247, 242, 0);
+color: salmon;
+border: radius 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 0px 1px 10px rgb(0,0, 0, 0.3);
+z-index: 100;
+}
+.botonFoto:hover{
+    text-decoration: none;
+    background: salmon;
+    color:rgb(247, 242, 0);
+}*/
+
