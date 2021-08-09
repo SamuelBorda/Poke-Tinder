@@ -5,12 +5,12 @@
 }
 body{
     max-height: 100vh;
-    background-color: rgb(251, 255, 0);
+    background-color: white;
     font-family: Calibri,sabs-serif; 
 }
 .todo{
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 350px 1fr;
     grid-template-rows: 100vh;
 
 }
@@ -39,8 +39,50 @@ height: 40px;
  font-size: 26px;
  color: white;
 }
+.buttonConfig{  
+ border-radius: 50%;
+ place-items: center;
+ cursor: pointer;
+ width: 40px;
+ height: 40px;
+ border:2px solid  white;
+ background: transparent;
+ margin-left: 115px;
+}
+.iconConfig{
+    position: absolute;
+   width: 20px;
+   height: 20px;
+   place-items: center;
+   
+}
+.iconConfig2{
+    width: 20px;
+    height: 20px;
+    place-items: center;
+ }
+.iconConfig:hover{
+    opacity: 0;
+    transition: opacity 1.5s; 
+}
+    
+.subMenu{
+    border-radius: 8px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+    list-style: none;
+    background:linear-gradient(to right , #ffffff , #fc0505);
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.subMenu.active{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
 .Barra{
- display:flex;
+ display:flex; 
  flex-direction: row;
  margin-top:25px;
  padding: 15px; 
@@ -57,6 +99,15 @@ height: 40px;
     width: 100%;
     height: 8px;
     background-image:linear-gradient(to right , #ff1c68 , #ff7562);
+    border-radius: 8px;
+}
+.mens:hover{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-image:linear-gradient(to right , #ff1c68 , #ff7562);
+    border-radius: 8px;
 }
 .mens{
     margin-left: 32px; 
@@ -86,10 +137,154 @@ height: 40px;
     line-height: 28px;
    
 }
+
+
+/*lado Derecho */
+.PosiblesMatches{
+    align-items: center;
+}
+.imagenDer{   
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 544px;  
+    margin-top: 10px;
+    margin-left: 250px;
+}
+.barraDer{
+    width: 98%;
+    display: flex;   
+    position: relative;
+    top: 15px; 
+}
+.barraDer1 , .barraDer2 , .barraDer3{  
+    margin-left: 4%;
+    display: flex;
+ background: rgb(85, 85, 85);
+ border-radius: 8px;
+ width: 30%;
+height: 8px;
+}
+.barraDer1{
+    background: white; 
+}
 .iconder{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondorec{
+    position: fixed;
+    top: 325px;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 529px;  
+    background:transparent;
+    font-family: Calibri,sabs-serif;
+}
+.LucarioText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: 26px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+}
+.wo , .re{
+    display: flex;
+    align-items: center;
+}
+.worldtext , .lugartext{
+    font-size: 16px;
+    margin-left: 10px;
+    text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+}
+.info{
+    cursor: pointer;
+    margin-left: 175px;
+}
+.icons{
+    position: absolute;
+    display: flex;
+    margin-left: 250px;
+    padding-left:15px;
+    bottom: 120px;
+}
+
+.iconbutton  {
+    place-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    border:2px solid rgb(255, 174, 0);
+    background: transparent;
+    margin-right: 8px;
+}
+.iconbutton2{
+    place-items: center;
+    cursor: pointer;
+    width: 91px;
+    height:91px;
+    border-radius: 50%;
+    border:2px solid rgb(255, 66, 91);
+    background: transparent;
+}
+.iconbutton3{
+    place-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid rgb(0, 183, 255);
+    background: transparent;
+}
+.iconbutton4{
+    place-items: center;
+    cursor: pointer;
+    width: 91px;
+    height:91px;
+    border-radius: 50%;
+    border:2px solid rgb(0, 255, 149);
+    background: transparent;
+}
+.iconbutton5{
+    place-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid rgb(174, 0, 255);
+    background: transparent;
+}
+
+
+
+.reload , .equis , .star , .heart , .thunder{
+    width: 30px;
+    height: 30px;
+}
+.reload:hover , .equis:hover , .star:hover , .heart:hover , .thunder:hover{
     width: 40px;
-    height: 40px;  
+    height: 40px;
+}
+
+/*.reload , .equis , .star , .heart , .thunder{
+   
+}*/
+
+
+
+
+
+a{
+text-decoration: none;
+color: inherit;
 }
 
 
