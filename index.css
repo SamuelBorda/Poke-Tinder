@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; 
+    font-family: Calibri,sabs-serif; 
 }
 body{
     max-height: 100vh;
@@ -70,23 +71,46 @@ height: 40px;
     border-radius: 8px;
     position: absolute;
     display: inline-block;
-    margin-left: 10px;
-    margin-top: -10px;
+    margin-left: 300px;
+    margin-top: 50px;
     list-style: none;
-    background:linear-gradient(to right , #ffffff , #fc0505);
+    background:url(./Assets/pokedex2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1.5s;
 }
-.subMenu.active{
-    opacity: 1;
-    transition: opacity 1.5s;
+
+.bflecha , .bflecha2{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+
 }
+.flecha{
+    width: 10px;
+    height: 10px;
+    
+}
+
+.flecha2{
+    width: 10px;
+    height: 10px;
+    opacity:0;
+}
+
 .Barra{
  display:flex; 
  flex-direction: row;
  margin-top:25px;
  padding: 15px; 
  list-style: none;
+}
+.bma , .bme{
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 .match{
     margin-left: 20px;
@@ -101,19 +125,21 @@ height: 40px;
     background-image:linear-gradient(to right , #ff1c68 , #ff7562);
     border-radius: 8px;
 }
-.mens:hover{
+.mens::after{
     display: block;
     content: "";
     width: 100%;
     height: 8px;
     background-image:linear-gradient(to right , #ff1c68 , #ff7562);
     border-radius: 8px;
+    opacity: 0;
 }
 .mens{
     margin-left: 32px; 
     font-weight: 600;
     color:black;
 }
+
 .inferior{
     margin-top: 100px;
     display: flex;
@@ -164,17 +190,44 @@ height: 40px;
  border-radius: 8px;
  width: 30%;
 height: 8px;
+position:relative;
 }
-.barraDer1{
+.baIn1,.baIn2, .baIn3{
+    content: "";
+    position: absolute;
+    width: 0%;
     background: white; 
+    height: 8px;
+    border-radius: 8px;
+transition: 0.1s;
 }
 .iconder{
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 30%;
 }
-
+.next{
+ position: relative;
+ display: flex;
+ align-items: center;
+ background: transparent;
+ width:25px;
+ height:25px;
+ margin-top:-300px;
+ margin-left:435px;
+}
+.back{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    width:25px;
+    height:25px;
+    margin-top:-300px;
+    margin-left:5px;
+}
 .fondorec{
     position: fixed;
     top: 325px;
@@ -195,6 +248,7 @@ height: 8px;
     font-size: 40px;
     text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
 }
+
 .wo , .re{
     display: flex;
     align-items: center;
@@ -204,9 +258,13 @@ height: 8px;
     margin-left: 10px;
     text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
 }
+.bInfo{
+    background: transparent;
+    margin-left: 175px;
+    border: none;
+}
 .info{
     cursor: pointer;
-    margin-left: 175px;
 }
 .icons{
     position: absolute;
@@ -286,9 +344,6 @@ a{
 text-decoration: none;
 color: inherit;
 }
-
-
-
 
 
 
