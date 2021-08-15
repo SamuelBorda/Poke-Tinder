@@ -6,38 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Assets/poketinder.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>PokeTinder|Conoce Pokeamigos y Pokemones nuevos para salir</title>
 </head>
-<body class="body">
+<body>
  <section class="todo">
     <aside class="izq">
     <div class="barraSup">
           <a href="#"><img src="./Assets/char2.png"alt="Foto de perfil" class="iconProfile"></a>
                 <a href="#"><p class="MiPer">Mi Perfil</p></a> 
-                <button class="buttonConfig">
+                <button class="buttonConfig" onclick="barra()">
                   <img src="Assets/gear.png" alt="config" class="iconConfig">
-                               <img src="Assets/gear2.png" alt="config" class="iconConfig2">
-                  <ul class="subMenu">
+                               <img src="Assets/gear2.png" alt="config" class="iconConfig2">              
+                </button>
+                <ul class="subMenu">
                     <br>
-                      <li> <input type="checkbox" name="checkbox" class="caja1">
-                        <a class="ModoNormal">Modo Normal</a>
+                      <li>                      
+                         <img src="./Assets/flecha.png" alt="flecha1" class="flecha">
+                        <button   class="bflecha" onclick ="Normal()"  >
+                         <a class="ModoNormal">Modo Normal  </a> 
+                        </button>
                       </li>
                       <br>
-                      <li><input type="checkbox" name="checkbox" class="caja2">
-                        <a class="ModoOscuro">Modo Oscuro</a>
+                      <li><img src="./Assets/flecha.png" alt="flecha1" class="flecha2">
+                        <button   class="bflecha2" onclick="Dark()">
+                        <a class="ModoOscuro">Modo Oscuro  </a>
+                        </button>
                       </li>
+                      <br>
                   </ul>
-                </button>
      </div>   
         <nav>
             <div class="centro">
             <ul class="Barra">
-               <a href="#"> <li class="match">
+               <button class="bma" onclick="MAtch()"> <li class="match" >
                     Matches
-                </li></a>
-                <a href="#"><li class="mens">
+                </li></button>
+                <button class="bme" onclick="Mens()"><li class="mens">
                  Mensajes   
-                </li></a>
+                </li></button>
             </ul>
             </div>
         </nav>
@@ -49,19 +56,25 @@
     </p>
    </div>
 </aside>
-<section>
+<section class="der" >
     <div class="PosiblesMatches">      
         <div class="imagenDer">
             <div class="barraDer">
-                <div class="barraDer1"></div>
-                <div class="barraDer2"></div>
-                <div class="barraDer3"></div>
+                <div class="barraDer1">
+                 <div class="baIn1"></div></div>
+                <div class="barraDer2"> <div class="baIn2"></div> </div>
+                <div class="barraDer3"> <div class="baIn3"></div> </div>
            </div>
-        <img src="./Assets/lucario-1.png" alt="ejm" class="iconder">
+        
+           <img src="./Assets/pokemon1-1.png" alt="ejm" class="iconder">
+           <button onmouseover="back()" onmouseleave="back2()" onclick="atras()">
+            <img src="./Assets/back.png" alt="boton next" class="back">
+            </button>
+           <button onmouseover="next()" onmouseleave="next2()" onclick="adelante()">
+            <img src="./Assets/next.png" alt="boton next" class="next" >
+            </button>
         <div class="fondorec">
-            <h3 class="LucarioText">Lucario</p>
-            
-              
+            <h3 class="LucarioText">Lucario</h3>        
               <div class="wo">
                 <img src="./Assets/icon-world.png" alt="icon de region" class="world">
                 <p class="worldtext">Region de Sinnoh</p>
@@ -69,8 +82,16 @@
               <div class="re">
               <img src="./Assets/icon-region.png" alt="icon de distancia" class="region">
               <p class="lugartext">16 kilometros de distancia</p>
+              <button class="bInfo" onclick="info()">
               <img src="./Assets/icon-info.png" alt="icon de mas informacion" class="info">
+              </button>
             </div>
+            <br>
+             <div class="de">
+              <p class="descr">Tengo una especial habilidad relacionada con el aura, que me permite entender y asimilar los sentimientos y pensamientos de los demás Pokémon.
+                Poseo un gran sentido de justicia y como buen luchador, me caracteriza la velocidad, agilidad y flexibilidad.
+                Soy de carácter duro y serio, pero me gustaría conocer al Pokémon que tenga un aura compatible con el mío.  </p>
+               </div>
         </div>
        
         </div>
@@ -82,15 +103,15 @@
     <div class="icons">
         <span>
             <button class="iconbutton"> 
-                <img src="./Assets/reload.png" alt="reload" class="reload" >
+                <img src="./Assets/reload.png" alt="reload" class="reload" onclick="perfilant()" >
                 </button>  
                 <button class="iconbutton2"> 
-                    <img src="./Assets/x.png" alt="x" class="equis" >
+                    <img src="./Assets/x.png" alt="x" class="equis" onclick="perfil()" >
                     </button>  
                     <button class="iconbutton3"> 
-                        <img src="./Assets/star.png" alt="star" class="star" >
+                        <img src="./Assets/star.png" alt="star" class="star" onclick="perfil()" >
                         </button>  
-                        <button class="iconbutton4"> 
+                        <button class="iconbutton4" onclick="perfil()"> 
                             <img src="./Assets/heart.png" alt="heart" class="heart" >
                             </button>  
             <button class="iconbutton5"> 
@@ -101,5 +122,6 @@
   </section>
 </section>
 <script src="CambiarFondo.js"></script>
+<script src="CambiarFoto.js"></script>
 </body>
 </html>
