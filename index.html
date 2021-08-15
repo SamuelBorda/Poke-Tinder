@@ -28,7 +28,7 @@
                         </button>
                       </li>
                       <br>
-                      <li onclick="flechaChange()"><img src="./Assets/flecha.png" alt="flecha1" class="flecha2">
+                      <li><img src="./Assets/flecha.png" alt="flecha1" class="flecha2">
                         <button   class="bflecha2" onclick="Dark()">
                         <a class="ModoOscuro">Modo Oscuro  </a>
                         </button>
@@ -66,15 +66,15 @@
                 <div class="barraDer3"> <div class="baIn3"></div> </div>
            </div>
         
-           <img src="./Assets/lucario-1.png" alt="ejm" class="iconder">
-           <button onmouseover="back()" onmouseleave="back2()">
-            <img src="./Assets/back.png" alt="boton next" class="back" >
+           <img src="./Assets/pokemon1-1.png" alt="ejm" class="iconder">
+           <button onmouseover="back()" onmouseleave="back2()" onclick="atras()">
+            <img src="./Assets/back.png" alt="boton next" class="back">
             </button>
-           <button onmouseover="next()" onmouseleave="next2()">
+           <button onmouseover="next()" onmouseleave="next2()" onclick="adelante()">
             <img src="./Assets/next.png" alt="boton next" class="next" >
             </button>
         <div class="fondorec">
-            <h3 class="LucarioText">Lucario</p>        
+            <h3 class="LucarioText">Lucario</h3>        
               <div class="wo">
                 <img src="./Assets/icon-world.png" alt="icon de region" class="world">
                 <p class="worldtext">Region de Sinnoh</p>
@@ -86,6 +86,12 @@
               <img src="./Assets/icon-info.png" alt="icon de mas informacion" class="info">
               </button>
             </div>
+            <br>
+             <div class="de">
+              <p class="descr">Tengo una especial habilidad relacionada con el aura, que me permite entender y asimilar los sentimientos y pensamientos de los demás Pokémon.
+                Poseo un gran sentido de justicia y como buen luchador, me caracteriza la velocidad, agilidad y flexibilidad.
+                Soy de carácter duro y serio, pero me gustaría conocer al Pokémon que tenga un aura compatible con el mío.  </p>
+               </div>
         </div>
        
         </div>
@@ -97,15 +103,15 @@
     <div class="icons">
         <span>
             <button class="iconbutton"> 
-                <img src="./Assets/reload.png" alt="reload" class="reload" >
+                <img src="./Assets/reload.png" alt="reload" class="reload" onclick="perfilant()" >
                 </button>  
                 <button class="iconbutton2"> 
-                    <img src="./Assets/x.png" alt="x" class="equis" >
+                    <img src="./Assets/x.png" alt="x" class="equis" onclick="perfil()" >
                     </button>  
                     <button class="iconbutton3"> 
-                        <img src="./Assets/star.png" alt="star" class="star" >
+                        <img src="./Assets/star.png" alt="star" class="star" onclick="perfil()" >
                         </button>  
-                        <button class="iconbutton4"> 
+                        <button class="iconbutton4" onclick="perfil()"> 
                             <img src="./Assets/heart.png" alt="heart" class="heart" >
                             </button>  
             <button class="iconbutton5"> 
