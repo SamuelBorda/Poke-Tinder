@@ -1,0 +1,506 @@
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: Calibri,sabs-serif; 
+}
+body{
+    max-height: 100vh;
+    background-color: white;
+    font-family: Calibri,sabs-serif; 
+}
+.todo{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 100vh;
+
+}
+.izq{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    
+}
+ .barraSup{
+    width: 100%;
+    height: 10.5%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right , #ff1c68 , #ff7562);
+}
+.iconProfile{
+ border-radius: 50%;
+ border: 2px solid white;
+width: 40px;
+height: 40px;
+}
+.MiPer{
+ margin-left: 15px;
+ font-size: 26px;
+ color: white;
+}
+.buttonConfig{  
+ border-radius: 50%;
+ place-items: center;
+ cursor: pointer;
+ width: 40px;
+ height: 40px;
+ border:2px solid  white;
+ background: transparent;
+ margin-left: 115px;
+}
+.iconConfig{
+    position: absolute;
+   width: 20px;
+   height: 20px;
+   place-items: center;
+   
+}
+.iconConfig2{
+    width: 20px;
+    height: 20px;
+    place-items: center;
+ }
+.iconConfig:hover{
+    opacity: 0;
+    transition: opacity 1.5s; 
+}
+    
+.subMenu{
+    border-radius: 8px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 50px;
+    
+    list-style: none;
+    background:url(./Assets/pokedex2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s;
+    visibility: hidden;
+}
+
+.bflecha , .bflecha2{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.flecha{
+    width: 10px;
+    height: 10px;
+    
+}
+
+.flecha2{
+    width: 10px;
+    height: 10px;
+    opacity:0;
+}
+
+.Barra{
+ display:flex; 
+ flex-direction: row;
+ margin-top:25px;
+ padding: 15px; 
+ list-style: none;
+}
+.bma , .bme{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.match{
+    margin-left: 20px;
+    font-weight: 600;
+     color:black;
+}
+.match::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-image:linear-gradient(to right , #ff1c68 , #ff7562);
+    border-radius: 8px;
+}
+.mens::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-image:linear-gradient(to right , #ff1c68 , #ff7562);
+    border-radius: 8px;
+    opacity: 0;
+}
+.mens{
+    margin-left: 32px; 
+    font-weight: 600;
+    color:black;
+}
+
+.inferior{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+  
+}
+.CuadradoMatches{
+    width: 131px;
+    height: 195px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to right , #ff1c68 , #ff7562);
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+    border-radius: 8px;
+}
+.texto{
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+   
+}
+@media screen and (max-width: 375px) {
+    
+     .subMenu{
+        margin-left: 250px;
+        margin-top: 90px;
+        position:absolute;
+        top: 0px;
+        left:0px;
+     }
+     
+     .barraSup{  
+     width: 400px;
+     height: 10.5%; 
+     }
+    .izq{
+        width:400px;
+
+    }
+    .buttonConfig{
+       /* position:absolute;
+        top:;
+        left:;*/
+        margin-left: 160px;
+    }
+    .Barra{
+       
+        padding: 0px; 
+        
+       }
+}
+
+
+/*lado Derecho */
+.PosiblesMatches{
+    align-items: center;
+}
+.imagenDer{   
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 544px;  
+    margin-top: 10px;
+    margin-left: 250px;
+}
+.barraDer{
+    width: 98%;
+    display: flex;   
+    position: relative;
+    top: 15px; 
+}
+.barraDer1 , .barraDer2 , .barraDer3{  
+    margin-left: 4%;
+    display: flex;
+ background: rgb(85, 85, 85);
+ border-radius: 8px;
+ width: 30%;
+height: 8px;
+position:relative;
+}
+.barraDer1{
+    background: white;
+}
+
+.iconder{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 30%;
+}
+.next{
+ position: relative;
+ display: flex;
+ align-items: center;
+ background: transparent;
+ width:25px;
+ height:25px;
+ margin-top:-300px;
+ margin-left:435px;
+}
+.back{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    width:25px;
+    height:25px;
+    margin-top:-300px;
+    margin-left:5px;
+}
+.fondorec{
+    position: fixed;
+    top: 325px;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 529px;  
+    background:transparent;
+    font-family: Calibri,sabs-serif;
+    color: white;
+    font-weight: 600;
+}
+.LucarioText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: 26px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+}
+
+.wo , .re{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.worldtext , .lugartext{
+
+    font-size: 16px;
+    margin-left: 10px;
+    text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+}
+.de{
+    width: 438px;
+    height: 168px; 
+        margin-left: 15px; 
+}
+.descr{
+
+    font-size: 14px;
+    line-height: 24px;
+    opacity:0;
+}
+.bInfo{
+    background: transparent;
+    margin-left: 175px;
+    border: none;
+}
+.info{
+    cursor: pointer;
+}
+.icons{
+    position: absolute;
+    display: flex;
+    margin-left: 250px;
+    padding-left:15px;
+    bottom: 120px;
+    
+}
+
+.iconbutton  {
+    place-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid rgb(255, 174, 0);
+    background: transparent;
+    margin-right: 8px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+}
+.iconbutton2{
+    place-items: center;
+    cursor: pointer;
+    width: 91px;
+    height:91px;
+    border-radius: 50%;
+    border:2px solid rgb(255, 66, 91);
+    background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+}
+.iconbutton3{
+    place-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid rgb(0, 183, 255);
+    background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+}
+.iconbutton4{
+    place-items: center;
+    cursor: pointer;
+    width: 91px;
+    height:91px;
+    border-radius: 50%;
+    border:2px solid rgb(0, 255, 149);
+    background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+}
+.iconbutton5{
+    place-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid rgb(174, 0, 255);
+    background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
+}
+
+
+
+.reload , .equis , .star , .heart , .thunder{
+    width: 30px;
+    height: 30px;
+}
+.reload:hover , .equis:hover , .star:hover , .heart:hover , .thunder:hover{
+    width: 40px;
+    height: 40px;
+}
+
+/*.reload , .equis , .star , .heart , .thunder{
+   
+}*/
+
+
+
+
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+@media screen and (max-width: 400px) {
+   .PosiblesMatches{
+        position:absolute;
+        top:761.7px;
+        left:0px;
+    }
+    /*.der{
+        position:absolute;
+        top:761.7px;
+        left:0px;
+    }*/
+    .icons{
+            position: absolute;
+            display: flex;
+            
+            margin-left: 11%;
+            /*padding-left:15%;*/
+            bottom: 12%;
+            top:1075px;
+            left:0px;
+        }
+        .iconbutton  {
+            width: 45px;
+            height: 45px;
+           
+        }
+        .iconbutton2{
+            width: 66px;
+            height:66px;
+            
+        }
+        .iconbutton3{
+             width: 45px;
+            height: 45px;
+            
+        }
+        .iconbutton4{
+            width: 66px;
+            height:66px;
+            
+        }
+        .iconbutton5{
+           
+            width: 45px;
+            height: 45px;
+            
+        }
+        
+        .imagenDer{
+            position:absolute;
+            top:0px;
+            left:20px;
+            margin-top: 0px;
+            margin-left: 20px;
+            width: 320px;
+            height: 394px;
+
+        }
+        .LucarioText{
+            font-size: 25px;  
+        }
+        .worldtext , .lugartext{
+            font-size: 15px;
+        }
+        .fondorec{
+            position: absolute;
+            top: 220px;
+            width:320px ;
+            height:420.38px ;
+        }
+        .de{
+           width: 288px;
+        }
+        .descr{
+            font-size:8px;
+            line-height: 12px;
+        }
+        .bInfo{
+            margin-left: 55px;
+           
+        }
+        .next{
+            /*position: relative;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            width:25px;
+            height:25px;*/
+            margin-top:-210px;
+            margin-left:285px;
+           }
+           .back{
+               /*position: relative;
+               display: flex;
+               align-items: center;
+               background: transparent;
+               width:25px;
+               height:25px;*/
+               margin-top:-210px;
+               margin-left:5px;
+           }
+
+        /*.todo{
+            display:flex;
+            flex-wrap: wrap;
+
+        }*/
+            
+    
+}
