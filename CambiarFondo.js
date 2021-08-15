@@ -4,10 +4,12 @@ function barra(){
     const menu = document.querySelector(".subMenu");
     if(estadoMenu==0){
     menu.style.opacity=1;
+    menu.style.visibility="visible";
     estadoMenu=1;
     }else{
      menu.style.opacity=0;
      estadoMenu=0;
+     menu.style.visibility="hidden";
     }
 
 }
@@ -67,15 +69,30 @@ function info(){
     const info=document.querySelector(".info");
     const world=document.querySelector(".world");
     const region=document.querySelector(".region");
+    const des=document.querySelector(".descr");
+    const b1=document.querySelector(".iconbutton");
+    const b2=document.querySelector(".iconbutton2");
+    const b3=document.querySelector(".iconbutton3");
+    const b4=document.querySelector(".iconbutton4");
+    const b5=document.querySelector(".iconbutton5");
     if(estadoInfo==0){
       datos.style.top="125px";
-      datos.style.background="url(./Assets/rottomfond.jpg)";
+      datos.style.background="url(./Assets/pokedex3.png)";
       datos.style.borderRadius="35px";
       letras.style.color="black";
       estadoInfo=1;
       info.src = "./Assets/icon-info2.png";
       world.src = "./Assets/icon-world2.png";
       region.src = "./Assets/icon-region2.png";
+      des.style.opacity=1;
+      b1.style.opacity=0;
+      b2.style.background="white";
+      b3.style.background="white";
+      b4.style.background="white";
+      b2.style.border="none";
+      b3.style.border="none";
+      b4.style.border="none";
+      b5.style.opacity=0;
     }else{
         datos.style.top="325px";
         datos.style.background="transparent";
@@ -85,6 +102,15 @@ function info(){
         info.src = "./Assets/icon-info.png";
         world.src = "./Assets/icon-world.png";
         region.src = "./Assets/icon-region.png";
+        des.style.opacity=0;
+        b1.style.opacity=1;
+        b2.style.background=" transparent";
+        b3.style.background=" transparent";
+        b4.style.background=" transparent";
+        b2.style.border="2px solid rgb(255, 66, 91)";
+        b3.style.border="2px solid rgb(0, 183, 255)";
+        b4.style.border="2px solid rgb(0, 255, 149)";
+        b5.style.opacity=1;
     }
 
 }
