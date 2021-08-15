@@ -1,5 +1,5 @@
 
- *{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; 
@@ -81,6 +81,7 @@ height: 40px;
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1.5s;
+    visibility: hidden;
 }
 
 .bflecha , .bflecha2{
@@ -224,15 +225,10 @@ height: 40px;
 height: 8px;
 position:relative;
 }
-.baIn1,.baIn2, .baIn3{
-    content: "";
-    position: absolute;
-    width: 0%;
-    background: white; 
-    height: 8px;
-    border-radius: 8px;
-transition: 0.1s;
+.barraDer1{
+    background: white;
 }
+
 .iconder{
     border-radius: 8px;
     display: flex;
@@ -269,6 +265,8 @@ transition: 0.1s;
     height: 529px;  
     background:transparent;
     font-family: Calibri,sabs-serif;
+    color: white;
+    font-weight: 600;
 }
 .LucarioText{
     display: flex;
@@ -284,11 +282,24 @@ transition: 0.1s;
 .wo , .re{
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 .worldtext , .lugartext{
+
     font-size: 16px;
     margin-left: 10px;
     text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+}
+.de{
+    width: 438px;
+    height: 168px; 
+        margin-left: 15px; 
+}
+.descr{
+
+    font-size: 14px;
+    line-height: 24px;
+    opacity:0;
 }
 .bInfo{
     background: transparent;
@@ -304,6 +315,7 @@ transition: 0.1s;
     margin-left: 250px;
     padding-left:15px;
     bottom: 120px;
+    
 }
 
 .iconbutton  {
@@ -315,6 +327,7 @@ transition: 0.1s;
     border:2px solid rgb(255, 174, 0);
     background: transparent;
     margin-right: 8px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
 }
 .iconbutton2{
     place-items: center;
@@ -324,6 +337,7 @@ transition: 0.1s;
     border-radius: 50%;
     border:2px solid rgb(255, 66, 91);
     background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
 }
 .iconbutton3{
     place-items: center;
@@ -333,6 +347,7 @@ transition: 0.1s;
     border-radius: 50%;
     border:2px solid rgb(0, 183, 255);
     background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
 }
 .iconbutton4{
     place-items: center;
@@ -342,6 +357,7 @@ transition: 0.1s;
     border-radius: 50%;
     border:2px solid rgb(0, 255, 149);
     background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
 }
 .iconbutton5{
     place-items: center;
@@ -351,6 +367,7 @@ transition: 0.1s;
     border-radius: 50%;
     border:2px solid rgb(174, 0, 255);
     background: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px;
 }
 
 
@@ -447,6 +464,13 @@ color: inherit;
             width:320px ;
             height:420.38px ;
         }
+        .de{
+           width: 288px;
+        }
+        .descr{
+            font-size:8px;
+            line-height: 12px;
+        }
         .bInfo{
             margin-left: 55px;
            
@@ -480,34 +504,3 @@ color: inherit;
             
     
 }
-
-
-
-
-
-
-
-
-
-
-/*.botonFoto{
- position:fixed;
- width: 55px;
-height: 55px;
-line-height: 55px;
-bottom: 30px;
-right: 30px;
-background: rgb(247, 242, 0);
-color: salmon;
-border: radius 50px;
-text-align: center;
-font-size: 30px;
-box-shadow: 0px 1px 10px rgb(0,0, 0, 0.3);
-z-index: 100;
-}
-.botonFoto:hover{
-    text-decoration: none;
-    background: salmon;
-    color:rgb(247, 242, 0);
-}*/
-
